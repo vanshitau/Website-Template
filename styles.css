@@ -343,12 +343,17 @@ a{
     position: relative;
     /* add a drop shadow */
     filter: drop-shadow(0px 5px 3px black);
-    
-   
- 
 
-    
-
+}
+.map {
+    flex: 1;
+    position: relative;
+}
+.map img{
+    height: 50vh;
+    position: relative;
+    /* add a drop shadow */
+    filter: drop-shadow(0px 5px 3px black);
 }
 
 footer {
