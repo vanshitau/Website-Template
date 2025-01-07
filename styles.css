@@ -369,8 +369,69 @@ a{
     text-decoration: line-through;
 
 }
+.left-btn,
+.right-btn{
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #f4f4f9);
+    cursor: pointer;
+    z-index: 9;
+}
 
+.left-btn{
+    left: 0;
+   
 
+}
+.right-btn{
+    right: 0;
+}
+.left-btn img, 
+.right-btn img{
+    opacity: 0.2;
+}
+
+.left-btn:hover img, 
+.right-btn:hover img{
+    opacity: 1;
+}
+
+.collection-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.collection{
+    position: relaitve;
+}
+.collection img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.collection p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+
+}
+.collection:nth-child(){
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
 
 /*about.html timeline*/
 
